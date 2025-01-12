@@ -32,7 +32,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             letter-spacing: 10px;
         }
         .ragdollsmall {
-            font-family: "Jersey 15";
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: rgb(180, 180, 180);
             letter-spacing: 5px;
         }
@@ -100,7 +100,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
     <div id="particles-js"></div>
     <div class="middlepage">
         <h1 class="ragdoll">Ragdoll Games</h1>
-        <h2 class="compost" id="choose"></h2>
+        <h3 class="ragdollsmall" id="choose"></h3>
     </div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -109,23 +109,18 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             window.location.href = url;
         }
         const stuff = [
-            `ragdoll so cool`,
-            `go do homework`,
-            `eeerrrrmmmm....`,
-            `probably on discord`,
-            `stop playing games ur grades are slipping`,
-            `raaaaagh`,
+            `Pray that the teacher doesn't call you out for being on games!`,
+            `Check out Snakecodr11!`,
+            `Live laugh love unblocked games!`,
+            `Please don't leak the Discord messages...`,
+            `*Why are you playing games when you could be doing homework?* Thought your teacher..`,
+            `I want more splash text...`,
         ]
-        var yes = stuff.length;
-        var random = Math.floor(Math.random() * howmany);
-
-        document.getElementById("choose").innerText = tell[randomIndex];
-
-        function change(num) {
-            document.getElementById("choose").innerText = tell[num];
-        }
-
-        window.onload = change(random);
+        function roulettemessages() {
+        const rand = Math.floor(Math.random() * stuff.length);
+        return stuff[rand];
+      }
+      document.getElementById("choose").innerText = roulettemessages();
     </script>
 </body>
 </html>
