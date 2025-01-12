@@ -99,8 +99,8 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 <body>
     <div id="particles-js"></div>
     <div class="middlepage">
-        <h1 class="compostbig">Ragdoll Games</h1>
-        <h2 class="compost" id=""></h2>
+        <h1 class="ragdoll">Ragdoll Games</h1>
+        <h2 class="compost" id="choose"></h2>
     </div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -108,6 +108,24 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         function redirect(url) {
             window.location.href = url;
         }
+        const stuff = [
+            `ragdoll so cool`,
+            `go do homework`,
+            `eeerrrrmmmm....`,
+            `probably on discord`,
+            `stop playing games ur grades are slipping`,
+            `raaaaagh`,
+        ]
+        var yes = stuff.length;
+        var random = Math.floor(Math.random() * howmany);
+
+        document.getElementById("choose").innerText = tell[randomIndex];
+
+        function change(num) {
+            document.getElementById("choose").innerText = tell[num];
+        }
+
+        window.onload = change(random);
     </script>
 </body>
 </html>
