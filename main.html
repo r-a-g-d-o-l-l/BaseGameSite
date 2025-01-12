@@ -6,35 +6,16 @@
     <script src="
 https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 "></script>
-    <title>Ragdoll</title>
+    <title>Title</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
-        @font-face {
-            font-family: "Jersey 15";
-            src: url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
-        }
-        @font-face {
-            font-family: "Croogla 4F";
-            src: url('assets/Croogla4F.ttf');
-        }
         body {
-            background: linear-gradient(rgb(72, 18, 122), rgb(152, 152, 152));
+            background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-        }
-        .ragdoll {
-            font-family: "Croogla 4F";
-            color: rgb(190, 190, 190);
-            letter-spacing: 10px;
-        }
-        .ragdollsmall {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(180, 180, 180);
-            letter-spacing: 5px;
         }
         .middlepage {
             padding: 20px;
@@ -47,40 +28,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             border-radius: 10px;
             opacity: 1;
             background: linear-gradient(rgba(0, 0, 0, 0.443), rgb(0, 0, 0, 0.443));
-        }
-        @keyframes anim {
-            0% {
-                opacity: 1;
-                background-color: rgba(67, 67, 67, 1); 
-            }
-            50% {
-                opacity: 1; 
-                background-color: rgb(93, 93, 93); 
-            }
-            100% {
-                opacity: 1; 
-                background-color: rgba(67, 67, 67, 1); 
-            }
-        }
-        .break {
-            border: 2px solid #c1c1c1;
-            margin-bottom: 20px;
-        }
-        button {
-            border: 1px solid #ffffff;
-            background-color: #888;
-            padding: 8px;
-            border-radius: 8px;
-            color: white;
-            font-family: "Jersey 15";
-            font-size: larger;
-            transition: 0.3s ease;
-        }
-        button:hover {
-            scale: 1.1;
-            cursor: pointer;
-            background-color: #666;
-            transition: 0.3s ease;
         }
         #particles-js {
   position: fixed;
@@ -99,8 +46,8 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 <body>
     <div id="particles-js"></div>
     <div class="middlepage">
-        <h1 class="ragdoll">Ragdoll Games</h1>
-        <h3 class="ragdollsmall" id="choose"></h3>
+        <h1 class="">Title</h1>
+        <h3 class="" id="choose"></h3>
     </div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -108,17 +55,17 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         function redirect(url) {
             window.location.href = url;
         }
-        const stuff = [
-            `Pray that the teacher doesn't call you out for being on games!`,
-            `Check out Snakecodr11!`,
-            `Live laugh love unblocked games!`,
-            `Please don't leak the Discord messages...`,
-            `*Why are you playing games when you could be doing homework?* Thought your teacher..`,
-            `I want more splash text...`,
+        const msgs = [
+            `1`,
+            `2`,
+            `3`,
+            `4`,
+            `5`,
+            `6`,
         ]
         function roulettemessages() {
-        const rand = Math.floor(Math.random() * stuff.length);
-        return stuff[rand];
+        const rand = Math.floor(Math.random() * msgs.length);
+        return msgs[rand];
       }
       document.getElementById("choose").innerText = roulettemessages();
     </script>
